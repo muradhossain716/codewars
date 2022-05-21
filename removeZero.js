@@ -1,9 +1,16 @@
 function noBoringZeros(n) {
-   
+    let num=1;
+   if(n<0) num=-1;
+   n=Math.abs(n);
     const arr=[...String(n)].map(Number);
-    const l=arr.length;
-    while(arr[l-1]===0){
+    
+    while(arr[arr.length-1]===0){
       arr.pop()
     }
-    return Number(arr.join(''))
+    console.log(arr)
+    let number=Number(arr.join(''))
+    return number*num
   }
+  
+
+  console.log(noBoringZeros(-123000))
