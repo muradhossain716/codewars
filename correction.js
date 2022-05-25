@@ -1,0 +1,1 @@
+let main=(verb, noun)=> verb + noun
