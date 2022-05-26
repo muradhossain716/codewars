@@ -1,7 +1,11 @@
-function sort(arr, sarr) {
-    let r=[]
-    for(i=0;i<sarr.length;i++){
-      r[i]=arr[sarr[i]]
+
+function sort(initialArray, sortingArray) {
+    const arr = [];
+
+    for (let i = 0; i < sortingArray.length; i++) {
+        arr[sortingArray[i]] = initialArray[i];     
     }
-    return r
-  }
+
+    return arr;
+}
+console.log(sort(['z', 'x', 'y'], [ 1, 2, 0]))
